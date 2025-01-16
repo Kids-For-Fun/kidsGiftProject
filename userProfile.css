@@ -11,85 +11,56 @@
   }
   
 /* ==========================nav bar========================================== */
-
-header {
-    background: var(--bg--color);
-    padding: 15px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  header .logo {
-    font-size: 24px;
+.logo {
+    font-size: 3rem;
     font-weight: bold;
-    color: #27ae60;
-  }
-  header nav {
+    color: #EECAD5;
     display: flex;
     align-items: center;
-  }
-  header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  header nav ul li {
-    margin: 0 15px;
-  }
-  header nav ul li a {
-    overflow: hidden;
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-    transition: -webkit-text-decoration 1s;
-    transition: text-decoration 1s;
-    transition: text-decoration 1s, -webkit-text-decoration 1s;
-  }
-  header nav ul li a:hover {
-    -webkit-text-decoration: underline rgb(7, 154, 199);
-            text-decoration: underline rgb(7, 154, 199);
-  }
-  
-  .search-container {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-  }
-  .search-container i {
-    font-size: 25px;
-  }
-  
-  .search-container input {
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 5px 15px;
-    margin-right: 10px;
-  }
-  
-  .icons {
-    display: flex;
-    align-items: center;
-  }
-  .icons i {
-    font-size: 25px;
-  }
-  
-  .icons img {
-    width: 20px;
-    height: 20px;
-    margin-left: 15px;
-    cursor: pointer;
-  }
+    gap: 10px;
+    text-transform: uppercase;
+}
 
+.logo span {
+    font-size: 2rem;
+    color: #FFB6C1; /* A complementary pink color */
+}
 
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
+}
 
+.icon {
+    font-size: 1.5rem;
+    color: #FF69B4; /* Another fun color for the icon */
+    animation: bounce 1.5s infinite;
+}
 
+/* Add a bouncing animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
 
 
 
 /* hero ================================================== */
+.background_hero-content{
+        width: 100%;
+        height: 25vh;
+        justify-content: center;
+        align-items: center; 
+            height: 300px; 
+            background-size: cover;
+            overflow: hidden; 
+          }
+      
+
 
 
 
@@ -163,7 +134,7 @@ body {
 .edit-forms {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+
     justify-content: space-between;
     margin-top: 30px;
 }
@@ -228,11 +199,26 @@ body {
 
 
 
-
-
 /* ============footer================ */
 
 footer{
     background-color: var(--main-color);
   }
 
+  #social_icon {
+    padding-bottom: 15px;
+  }
+
+  #social_icon li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  #social_icon i {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+  }
+
+  #social_icon i:hover {
+    color: #FF69B4; 
+  }
