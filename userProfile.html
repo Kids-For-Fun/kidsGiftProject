@@ -13,29 +13,69 @@
 <body>
 
     <!-- navbar====================================== -->
-<header>
-    <div class="logo">VitC</div>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">New Launches</a></li>
-            <li><a href="#">Sale</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
-        <div class="search-container">
-            <input type="text" placeholder="Search Product">
-            <i class="fa-brands fa-searchengin"></i>
+    <header class="bg-light shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo">
+                    Kids <span>★</span>
+                    <div class="icon">❤</div>
+                </div>
+    
+                <!-- Burger Button -->
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Collapsible Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text" href="index.html" style="color: #EECAD5;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Categorys</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="userProfile.html">Your Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="contactUs.html">Contact</a>
+                        </li>
+                    </ul>
+    
+                    <!-- Search Bar and Icons -->
+                    <div class="d-flex align-items-center">
+                        <!-- Search Bar -->
+                        <div class="input-group me-3">
+                            <input type="text" class="form-control" placeholder="Search Product">
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+    
+                        <!-- User Icon -->
+                        <i class="fa-regular fa-user fs-5"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========= hero section=========================================  -->
+ <section class="background_hero">
+    <div class="background_hero-content">
         </div>
-    </nav>
-    <div class="icons">
-        <i class="fa-regular fa-user"></i>
-        <!-- <img src="cart-icon.png" alt="Cart"> -->
-    </div>
-</header>
-
-
-<!-- hero section=============================  -->
+<!-- main section=============================  -->
 
 <div class="profile-container">
     <div class="profile-header">
@@ -52,18 +92,29 @@
                 <th>Email</th>
                 <th>Password</th>
             </tr>
-            <tr>
-                <td>Ali Mohammad</td>
-                <td>ali@email.com</td>
-                <td>********[Edit]</td>
+            <tr >
+                <td id="flex" style="display: flex; justify-content: space-between;">
+                    <span>Ali Mohammad   </span>  
+                    <i  id="edit_name" class='bx bx-edit-alt' ></i>
+                </td>
+
+                <td   >
+                    <span   >ali@email.com  </span>  
+                        <i  id="edit_email" class='bx bx-edit-alt' ></i>
+                </td>
+
+                <td style="display: flex; justify-content: space-between;">
+                    <span>********[Edit]     </span>
+                        <i  id="edit_password" class='bx bx-edit-alt' ></i>
+                </td>
             </tr>
         </table>
     </div>
 
-    <div class="edit-forms">
-        <div class="edit-box">
+    <div class="edit-forms" >
+        <div class="edit-box"  style="display: none;">
             <h3>Edit Email</h3>
-            <form>
+            <form >
                 <label>Old Email</label>
                 <input type="email" placeholder="Enter old email">
                 <label>New Email</label>
@@ -75,7 +126,7 @@
             </form>
         </div>
 
-        <div class="edit-box">
+        <div class="edit-box" style="display: none;">
             <h3>Edit Name</h3>
             <form>
                 <label>Old Name</label>
@@ -89,7 +140,7 @@
             </form>
         </div>
 
-        <div class="edit-box">
+        <div class="edit-box" style="display: none;">
             <h3>Edit Password</h3>
             <form>
                 <label>Old Password</label>
@@ -113,25 +164,26 @@
 
 
 
-<!-- ==================footer================================= -->
-
 
     <hr>
 
-    <footer class="py-4 my-0 ">
-        <ul class="nav  justify-content-center list-unstyled d-flex">
-          <i class='bx bxl-instagram' ></i> <svg class="bi" width="30" height="30"><use xlink:href="#instagram"/></svg></a></li>
-          <i class='bx bxl-facebook-circle'  ></i><svg class="bi" width="30" height="30"><use xlink:href="#instagram"/></svg></a></li>
-          <i class='bx bxl-twitter'></i><svg class="bi" width="30" height="30"><use xlink:href="#instagram"/></svg></a></li>
+    <footer class="py-4 my-0">
+        <ul id="social_icon" class="nav justify-content-center list-unstyled pb-3">
+          <!-- ==================footer================================= -->
+
+<li><i class='bx bxl-instagram' style="font-size: 30px;"></i></li>
+          <li><i class='bx bxl-facebook-circle' style="font-size:30px;"></i></li>
+          <li><i class='bx bxl-twitter' style="font-size: 30px;"></i></li>
         </ul>
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-      </ul>
-      <p class="text-center text-body-secondary">&copy; 2024 Company, Inc</p>
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="product.html" class="nav-link px-2 text-body-secondary">Category</a></li>
+        <li class="nav-item"><a href="product.html" class="nav-link px-2 text-body-secondary">Trend</a></li>
+        <li class="nav-item"><a href="userProfile.html" class="nav-link px-2 text-body-secondary"> Your Profile </a></li>
+        <li class="nav-item"><a href="contactUs.html" class="nav-link px-2 text-body-secondary">Contact </a></li>
+      
+    </ul>
+      <p class="text-center text-body-secondary">&copy; 2024 lolipop, Inc</p>
     </footer>
 
 
