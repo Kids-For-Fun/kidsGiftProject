@@ -93,4 +93,62 @@ header {
 }
 
 
+/* -----------------------section----------------------- */
 
+#sections div a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  section {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    
+  }
+  #sections div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #sec-img1 {
+    background-image: url('https://img.freepik.com/free-vector/hand-drawn-flat-christmas-toys-collection_23-2149136088.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted');
+    background-size: cover;
+    background-position: center;
+}
+  #sec-img2 {
+    background-image: url('https://img.freepik.com/free-psd/view-children-s-stuffed-animal_23-2151517687.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted');
+    background-size: cover;
+    background-position: center;
+}
+  #sec-img3 {
+    background-image: url('https://img.freepik.com/premium-photo/cleaning-concept-with-washing-products-brush-copy-space-text_594847-6758.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted');
+    background-size: cover;
+    background-position: center;
+}
+  #sec-img4 {
+    background-image: url('https://img.freepik.com/free-photo/cute-plush-toys-arrangement_23-2150312306.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted');
+    background-size: cover;
+    background-position: center;
+}
+  #sec-img5 {
+    background-image: url('https://img.freepik.com/premium-photo/wooden-colorful-toy-train-with-details-soft-blue_102285-68.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted');
+    background-size: cover;
+    background-position: center;
+}
+  #sec-img6 {
+    background-image: url('https://img.freepik.com/premium-photo/children-toys-top-view_93675-76262.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted');
+    background-size: cover;
+    background-position: center;
+}
+
+/* -----------------------filter feature----------------------- */
