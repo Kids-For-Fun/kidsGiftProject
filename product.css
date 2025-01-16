@@ -1,0 +1,179 @@
+:root {
+  --main-color: #eecad5;
+  --text-color: #1d2939;
+  --bg--color: #f9ffff;
+  --body--color: #f8fcff;
+}
+
+* {
+  margin: 0px;
+}
+body {
+  background-color: var(--body--color);
+}
+
+/* -----------------------header----------------------- */
+header {
+  background: var(--bg--color);
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header #logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li {
+  margin: 0 15px;
+}
+header nav ul li a {
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: -webkit-text-decoration 1s;
+  transition: text-decoration 1s;
+  transition: text-decoration 1s, -webkit-text-decoration 1s;
+}
+header nav ul li a:hover {
+  -webkit-text-decoration: underline rgb(7, 154, 199);
+  text-decoration: underline rgb(7, 154, 199);
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+#search-container i {
+  font-size: 25px;
+}
+
+#search-container input {
+  border: 1px solid var(--main-color);
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+
+#icons {
+  display: flex;
+  align-items: center;
+}
+#icons i {
+  font-size: 25px;
+}
+
+#icons img {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* -----------------------hero section----------------------- */
+
+.heroSection img {
+  width: 100%;
+  height: 65vh;
+}
+
+#sections {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--bg--color);
+  min-height: 25vh;
+}
+
+/* -----------------------section----------------------- */
+
+#sections div a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+section {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  
+}
+#sections div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sec-img1 {
+  background-image: url("https://img.freepik.com/free-vector/hand-drawn-flat-christmas-toys-collection_23-2149136088.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted");
+  background-size: cover;
+  background-position: center;
+}
+#sec-img2 {
+  background-image: url("https://img.freepik.com/free-psd/view-children-s-stuffed-animal_23-2151517687.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted");
+  background-size: cover;
+  background-position: center;
+}
+#sec-img3 {
+  background-image: url("https://img.freepik.com/premium-photo/cleaning-concept-with-washing-products-brush-copy-space-text_594847-6758.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted");
+  background-size: cover;
+  background-position: center;
+}
+#sec-img4 {
+  background-image: url("https://img.freepik.com/free-photo/cute-plush-toys-arrangement_23-2150312306.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted");
+  background-size: cover;
+  background-position: center;
+}
+#sec-img5 {
+  background-image: url("https://img.freepik.com/premium-photo/wooden-colorful-toy-train-with-details-soft-blue_102285-68.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted");
+  background-size: cover;
+  background-position: center;
+}
+#sec-img6 {
+  background-image: url("https://img.freepik.com/premium-photo/children-toys-top-view_93675-76262.jpg?ga=GA1.1.908539965.1736962294&semt=ais_tags_boosted");
+  background-size: cover;
+  background-position: center;
+}
+
+/* -----------------------filter feature----------------------- */
+#filterContainer{
+    background-color: var(--bg--color);
+}
+#dropdownContainer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#dropdownBTN{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-weight: bold;
+    box-shadow: #7e445684 4px 4px 8px;
+}
+
