@@ -1,0 +1,238 @@
+:root{
+    --main-color:#EECAD5 ;
+    --text-color:#1D2939 ;
+    --bg--color: #F9FFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* ==========================nav bar========================================== */
+
+header {
+    background: var(--bg--color);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  header nav ul li {
+    margin: 0 15px;
+  }
+  header nav ul li a {
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: -webkit-text-decoration 1s;
+    transition: text-decoration 1s;
+    transition: text-decoration 1s, -webkit-text-decoration 1s;
+  }
+  header nav ul li a:hover {
+    -webkit-text-decoration: underline rgb(7, 154, 199);
+            text-decoration: underline rgb(7, 154, 199);
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .search-container i {
+    font-size: 25px;
+  }
+  
+  .search-container input {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-right: 10px;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  .icons i {
+    font-size: 25px;
+  }
+  
+  .icons img {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+/* hero ================================================== */
+
+
+
+/* main================================================== */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg--color);
+    color: #333;
+}
+
+.profile-container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-avatar img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.welcome-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+}
+
+.welcome-message span {
+    color: var(--main-color);
+}
+
+.profile-info {
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.info-table {
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.info-table th, .info-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.info-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.edit-forms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.edit-box {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.edit-box h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.edit-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.edit-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.edit-box button {
+    width: 100%;
+    padding: 10px;
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.edit-box button:hover {
+    background: var(--main-color);
+}
+
+
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  gap:5px;
+}
+
+
+
+
+
+
+
+
+
+/* ============footer================ */
+
+footer{
+    background-color: var(--main-color);
+  }
+
