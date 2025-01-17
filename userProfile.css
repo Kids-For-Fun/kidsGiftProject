@@ -179,14 +179,15 @@ body {
 }
 
 .edit-box button {
-    width: 100%;
-    padding: 10px;
-    background: var(--main-color);
-    color: #fff;
+    padding: 10px 20px;
+    background-color: var(--main-color); 
+    color: white;   
     border: none;
     border-radius: 5px;
-    font-size: 14px;
     cursor: pointer;
+    font-size: 1rem; 
+    transition: background-color 0.3s;
+    margin-left:45% ;
 }
 
 .edit-box button:hover {
@@ -195,12 +196,10 @@ body {
 
 
 
-.btn{
-  display: flex;
-  flex-direction: row;
-  gap:5px;
+.edit-box button:hover {
+    background-color: #bdbdbd; 
+    color: var(--main-color);
 }
-
 
 
 
@@ -230,3 +229,42 @@ footer{
   #social_icon i:hover {
     color: #FF69B4; 
   }
+  footer li{
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .edit-forms {
+        flex-direction: column; /* جعل الأعمدة في صف عمودي */
+    }
+
+    .edit-box {
+        flex: 1 1 100%; /* جعل العناصر تأخذ 100% من العرض */
+        margin-bottom: 10px; /* تقليل المسافة بين المربعات */
+    }
+
+    .edit-box button {
+        margin-left: 0; /* إزالة الهامش اليساري */
+        width: 100%; /* جعل الزر يأخذ عرض كامل */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-container {
+        width: 100%; 
+    }
+
+    .profile-avatar img {
+        width: 80px; /* تقليل حجم الصورة */
+        height: 80px; /* تقليل الحجم ليناسب الشاشة الصغيرة */
+    }
+
+    .welcome-message {
+        font-size: 18px; /* تقليل حجم الخط في الرسالة الترحيبية */
+    }
+
+    .info-table th, .info-table td {
+        font-size: 14px; /* تقليل حجم الخط في جدول المعلومات */
+    }
+}

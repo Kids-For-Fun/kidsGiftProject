@@ -59,11 +59,11 @@ const deleteNameBtn = document.querySelector('.delet_name_btn');
 const deleteEmailBtn = document.querySelector('.delet_email_btn'); 
 
 const showName = document.getElementById('showName');
-showName.innerHTML = "user.name;"
+showName.innerHTML = user.name
 
 
 const showEmail = document.getElementById('showEmail'); 
-showEmail.textContent = "user.email";
+showEmail.textContent = user.email
 // ================= for editing ============
 edit_nameBtn.addEventListener('click', () => {
     editEmailForm.style.display = 'none';

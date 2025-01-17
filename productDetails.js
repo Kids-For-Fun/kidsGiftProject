@@ -22,30 +22,71 @@
  
   // ===========================firebase=============================
 
-  // // Import the functions you need from the SDKs you need
-  // import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
-  // // TODO: Add SDKs for Firebase products that you want to use
-  // // https://firebase.google.com/docs/web/setup#available-libraries
-  const firebaseConfig = {
-    apiKey: "AIzaSyAgyWGXCAIR6NiKfkzkWZbBeOMPRDNwMg4",
-    authDomain: "contactus-a9d19.firebaseapp.com",
-    databaseURL: "https://contactus-a9d19-default-rtdb.firebaseio.com",
-    projectId: "contactus-a9d19",
-    storageBucket: "contactus-a9d19.firebasestorage.app",
-    messagingSenderId: "290565306453",
-   appId: "1:290565306453:web:0995f78c2a17d582903cdc"
-  };
+   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+   import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
 
-  // Initialize Firebase
-  const app = firebase.initializeApp(firebaseConfig);
-  const database = firebase.database();
-  const storage = firebase.storage();
+   // TODO: Add SDKs for Firebase products that you want to use
+   // https://firebase.google.com/docs/web/setup#available-libraries
+ 
+   // Your web app's Firebase configuration
+   const firebaseConfig = {
+     apiKey: "AIzaSyAgyWGXCAIR6NiKfkzkWZbBeOMPRDNwMg4",
+     authDomain: "contactus-a9d19.firebaseapp.com",
+     databaseURL: "https://contactus-a9d19-default-rtdb.firebaseio.com/products",
+     projectId: "contactus-a9d19",
+     storageBucket: "contactus-a9d19.firebasestorage.app",
+     messagingSenderId: "290565306453",
+     appId: "1:290565306453:web:0995f78c2a17d582903cdc"
+   };
+ 
+   // Initialize Firebase
+   const app = initializeApp(firebaseConfig);
+   const analytics=getAnalytics(app)
+//  ========================================================================================================================
+const productURL =  "https://contactus-a9d19-default-rtdb.firebaseio.com/products";
+
+async function updateProduct(id) {
+  const newTitle = prompt("Enter new title:");
+  if (!newTitle) return;
+
+  try {
+    const response = await fetch(`${productURL}/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name: newTitle }), 
+    });
+
+    if (response.ok) {
+      alert("Product updated successfully!");
+      fetchProduct(); 
+    } else {
+      alert("Failed to update product.");
+    }
+  } catch (error) {
+    console.error("Error updating product:", error);
+  }
+}
+const database = firebase.database();
+const reference = database.ref('path/to/your/object');  // ضع المسار الصحيح هنا
+
+// استرجاع البيانات من Firebase
+reference.once('value')
+  .then(snapshot => {
+    const data = snapshot.val();
+    console.log(data); // هنا ستكون البيانات المسترجعة
+  })
+  .catch(error => {
+    console.error('Error retrieving data: ', error);
+  });
+// import { database } from "./config.js";
+// import { ref ,set } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-database.js";
+
 
 
 
 const review_form_submit=document.getElementById('review_form_submit');
- 
-
 review_form_submit.addEventListener("click",async(e)=>{
   e.preventDefault();
 
