@@ -73,15 +73,18 @@
     </header>
     <!-- ========= hero section=========================================  -->
 
-    <div class="background_hero">
-        <img src="" alt="">
-        </div>
+    <div class="heroSection">
+        <img src="https://img.freepik.com/free-photo/cute-plush-toys-arrangement_23-2150312316.jpg?t=st=1737057742~exp=1737061342~hmac=aea0c5c6262db5a5bc5b20f3483160a595cee3cba4e76347d4c75d77bd1f7962&w=996" alt="">
+        
+      </div>
+      
+      
 <!-- main section=============================  -->
 
 <div class="profile-container">
     <div class="profile-header">
         <div class="profile-avatar">
-            <img src="https://icons-for-free.com/iff/png/512/avatar+human+man+profile+icon-1320085876716628234.png" alt="Avatar">
+            <img src="https://i.pinimg.com/736x/26/cf/47/26cf4792065d7b5da949c48a002d4f49.jpg" alt="Avatar">
         </div>
         <h1 class="welcome-message">Hello, <span>Ali Mohammad</span></h1>
     </div>
@@ -94,17 +97,17 @@
                 <th>Password</th>
             </tr>
             <tr >
-                <td id="flex" style="display: flex; justify-content: space-between;">
-                    <span>Ali Mohammad   </span>  
+                <td  style="display: flex; justify-content: space-between;">
+                    <span   id="showName">Ali Mohammad   </span>  
                     <i  id="edit_name" class='bx bx-edit-alt' ></i>
                 </td>
 
                 <td   >
-                    <span   >ali@email.com  </span>  
+                    <span  id="showEmail"  >ali@email.com  </span>  
                         <i  id="edit_email" class='bx bx-edit-alt' ></i>
                 </td>
 
-                <td style="display: flex; justify-content: space-between;">
+                <td  style="display: flex; justify-content: space-between;">
                     <span>********[Edit]     </span>
                         <i  id="edit_password" class='bx bx-edit-alt' ></i>
                 </td>
@@ -113,13 +116,15 @@
     </div>
 
     <div class="edit-forms" >
-        <div class="edit-box"  style="display: none;">
+        <div   id= "edit-box-email" class="edit-box"  style="display: none;">
             <h3>Edit Email</h3>
             <form >
                 <label>Old Email</label>
-                <input type="email" placeholder="Enter old email">
+                <input  type="email" placeholder="Enter old email">
                 <label>New Email</label>
-                <input type="email" placeholder="Enter new email">
+                <input  id="newEmail" type="email" placeholder="Enter new email">
+                <label> Password</label>
+                <input  id ="oldPassword" type="password" placeholder="Enter your password">
             <div class="btn">
                 <button class="edit_Email_btn" type="submit">Edit</button>
                 <button class="delet_email_btn"type="submit">Delet</button>
@@ -127,13 +132,13 @@
             </form>
         </div>
 
-        <div class="edit-box" style="display: none;">
+        <div id= "edit-box-name" class="edit-box" style="display: none;">
             <h3>Edit Name</h3>
             <form>
                 <label>Old Name</label>
-                <input type="text" placeholder="Enter old name">
+                <input  type="text" placeholder="Enter old name" disabled>
                 <label>New Name</label>
-                <input type="text" placeholder="Enter new name">
+                <input id="newName"  type="text" placeholder="Enter new name" required>
                 <div class="btn">
                     <button class="edit_name_btn" type="submit">Edit</button>
                     <button class="delet_name_btn"type="submit">Delet</button>
@@ -141,15 +146,15 @@
             </form>
         </div>
 
-        <div class="edit-box" style="display: none;">
+        <div id= "edit-box-password"  class="edit-box" style="display: none;">
             <h3>Edit Password</h3>
             <form>
                 <label>Old Password</label>
-                <input type="password" placeholder="Enter old password">
+                <input id="old_Password" type="password" placeholder="Enter old password">
                 <label>New Password</label>
-                <input type="password" placeholder="Enter new password">
+                <input  id="newPassword" type="password" placeholder="Enter new password">
                 <label>Confirm Password</label>
-                <input type="password" placeholder="Confirm new password">
+                <input   id="newPasswordConfirm" type="password" placeholder="Confirm new password">
                 <div class="btn">
                     <button class="edit_password_btn" type="submit">Edit</button>
                     <button class="delet_passwprd_btn"type="submit">Delet</button>
@@ -163,14 +168,11 @@
 
 
 
-
-
+          <!-- ==================footer================================= -->
 
     <hr>
-
     <footer class="py-4 my-0">
         <ul id="social_icon" class="nav justify-content-center list-unstyled pb-3">
-          <!-- ==================footer================================= -->
 
 <li><i class='bx bxl-instagram' style="font-size: 30px;"></i></li>
           <li><i class='bx bxl-facebook-circle' style="font-size:30px;"></i></li>

@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/11e4363e87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="stylesheet" href="productDetails.css">
     <title>Document</title>
@@ -14,7 +15,7 @@
 
 
  <!-- navbar====================================== -->
- <header class="bg-light shadow-sm">
+ <header  id="header" class="bg-light shadow-sm">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
           <!-- Logo -->
@@ -60,7 +61,7 @@
                   <!-- Search Bar -->
                   <div class="input-group me-3">
                       <input type="text" class="form-control" placeholder="Search Product">
-                      <button class="btn btn-outline-secondary" type="button">
+                      <button  id="btn_nav" class="btn btn-outline-secondary" type="button">
                           <i class="fa fa-search"></i>
                       </button>
                   </div>
@@ -73,9 +74,12 @@
   </nav>
 </header>
 <!-- ========= hero section=========================================  -->
-<section class="background_hero">
-<div class="background_hero-content">
-  </div>
+
+<div class="heroSection">
+  <img src="https://img.freepik.com/free-photo/cute-plush-toys-arrangement_23-2150312316.jpg?t=st=1737057742~exp=1737061342~hmac=aea0c5c6262db5a5bc5b20f3483160a595cee3cba4e76347d4c75d77bd1f7962&w=996" alt="">
+  
+</div>
+
 <!-- main section=============================  -->
 
     <!-- Gift Details Section -->
@@ -125,75 +129,123 @@
         </div>
       </div>
     </div>
-    <!-- =========================== -->
-   
-    <!-- Reviews Section -->
-    <div class="reviews" >
-      <h2 style="margin-bottom: 20px;">Reviews & Rating</h2>
-      <div class="review-cards">
+   <!--  ===================form review ============================= -->
 
-        <div class="container ">
-            <div class="review-card p-3 ">
-              <div class="d-flex align-items-center mb-3">
-                <img src="https://img.freepik.com/free-photo/handsome-happy-hipster-guy-smiling_176420-20321.jpg?t=st=1736971921~exp=1736975521~hmac=2ff0381c48a7f20679a42ec4a5abf133bacb5baacb89f64992ff8b5294445577&w=900" alt="User Image">
-                <div class="ms-3">
-                  <h5 class="mb-0">Aspen Siphron</h5>
-                  <small class="text-muted">May 12, 2024</small>
-                </div>
-                <div class="ms-auto">
-                  <span class="rating">⭐ 4.9</span>
-                </div>
-              </div>
-              <p>
-                I've been using Nature's Best Vitamin C 1000 mg tablets for six months, and the results are fantastic. My immune system feels stronger—I haven't had a single cold this flu season. I've also noticed a boost in my energy levels throughout the day.
-              </p>
-            </div>
+    
+   <!-- =========================================================== -->
+   <section class="reviews-section">
+    <div class="container">
+      <h2 class="section-title">Reviews & Rating</h2>
+  
+      <!-- Review Form -->
+      <div id="review_form" class="review-form">
+        <h3 class="form-title">Review the Product</h3>
+        <form enctype="multipart/form-data">
+          <!-- Name -->
+          <div class="form-group">
+            <label for="productName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="productName" placeholder="Enter Your Name">
           </div>
-      
-         
-        
-      
-          <div class="container  ">
-            <div class="review-card p-3">
-              <div class="d-flex align-items-center mb-3">
-                <img src="https://img.freepik.com/free-photo/handsome-happy-hipster-guy-smiling_176420-20321.jpg?t=st=1736971921~exp=1736975521~hmac=2ff0381c48a7f20679a42ec4a5abf133bacb5baacb89f64992ff8b5294445577&w=900" alt="User Image">
-                <div class="ms-3">
-                  <h5 class="mb-0">Aspen Siphron</h5>
-                  <small class="text-muted">May 12, 2024</small>
-                </div>
-                <div class="ms-auto">
-                  <span class="rating">⭐ 4.9</span>
-                </div>
-              </div>
-              <p>
-                I've been using Nature's Best Vitamin C 1000 mg tablets for six months, and the results are fantastic. My immune system feels stronger—I haven't had a single cold this flu season. I've also noticed a boost in my energy levels throughout the day.
-              </p>
-            </div>
+  
+          <!-- Star Rating -->
+          <div id="rating_body" class="form-group">
+            <label for="starRating" class="form-label">Rating</label>
+            <div class="stars">
+              <i class="fa fa-star" data-value="1"></i>
+              <i class="fa fa-star" data-value="2"></i>
+              <i class="fa fa-star" data-value="3"></i>
+              <i class="fa fa-star" data-value="4"></i>
+              <i class="fa fa-star" data-value="5"></i>
           </div>
-      
-
-          <div class="container">
-            <div class="review-card p-3">
-              <div class="d-flex align-items-center mb-3">
-                <img src="https://img.freepik.com/free-photo/handsome-happy-hipster-guy-smiling_176420-20321.jpg?t=st=1736971921~exp=1736975521~hmac=2ff0381c48a7f20679a42ec4a5abf133bacb5baacb89f64992ff8b5294445577&w=900" alt="User Image">
-                <div class="ms-3">
-                  <h5 class="mb-0">Aspen Siphron</h5>
-                  <small class="text-muted">May 12, 2024</small>
-                </div>
-                <div class="ms-auto">
-                  <span class="rating">⭐ 4.9</span>
-                </div>
-              </div>
-              <p>
-                I've been using Nature's Best Vitamin C 1000 mg tablets for six months, and the results are fantastic. My immune system feels stronger—I haven't had a single cold this flu season. I've also noticed a boost in my energy levels throughout the day.
-              </p>
-            </div>
+          
+          <!-- عرض التقييم -->
+          <div id="ratingDisplay">Rating is: 0/5</div>
           </div>
+  
+          <!-- Review Text -->
+          <div class="form-group">
+            <label for="reviewText" class="form-label">Review</label>
+            <textarea class="form-control" id="reviewText" rows="4" placeholder="Write your review"></textarea>
+          </div>
+  
+          <!-- Upload Photo -->
+          <div class="form-group">
+            <label for="uploadPhoto" class="form-label">Upload a Product Photo (Optional)</label>
+            <input class="form-control" type="file" id="uploadPhoto" accept="image/*">
+          </div>
+  
+          <!-- Submit Button -->
+          <button type="submit" id="review_form_submit" class="form-button">Submit Review</button>
+        </form>
+      </div>
+  
+      <!-- Reviews List -->
+      <div class="reviews-list">
+        <div class="scroll-container">
+          <!-- Review Card -->
+          <!-- <div class="review-card">
+            <div class="review-header">
+              <img src="https://img.freepik.com/free-photo/handsome-happy-hipster-guy-smiling_176420-20321.jpg" alt="User Image">
+              <div>
+                <h5 class="reviewer-name">Aspen Siphron</h5>
+                <small class="review-date">May 12, 2024</small>
+              </div>
+              <span class="rating">⭐ 4.9</span>
+            </div>
+            <p class="review-text">
+              I've been using Nature's Best Vitamin C 1000 mg tablets for six months, and the results are fantastic.
+            </p>
+          </div> -->
 
 
+          <!-- <div class="review-card">
+            <div class="review-header">
+              <img src="https://img.freepik.com/free-photo/handsome-happy-hipster-guy-smiling_176420-20321.jpg" alt="User Image">
+              <div>
+                <h5 class="reviewer-name">Aspen Siphron</h5>
+                <small class="review-date">May 12, 2024</small>
+              </div>
+              <span class="rating">⭐ 4.9</span>
+            </div>
+            <p class="review-text">
+              I've been using Nature's Best Vitamin C 1000 mg tablets for six months, and the results are fantastic.
+            </p>
+          </div> -->
+
+
+          <!-- <div class="review-card">
+            <div class="review-header">
+              <img src="https://img.freepik.com/free-photo/handsome-happy-hipster-guy-smiling_176420-20321.jpg" alt="User Image">
+              <div>
+                <h5 class="reviewer-name">Aspen Siphron</h5>
+                <small class="review-date">May 12, 2024</small>
+              </div>
+              <span class="rating">⭐ 4.9</span>
+            </div>
+            <p class="review-text">
+              I've been using Nature's Best Vitamin C 1000 mg tablets for six months, and the results are fantastic.
+            </p>
+          </div> -->
+
+
+          <!-- <div class="review-card">
+            <div class="review-header">
+              <img src="https://img.freepik.com/free-photo/handsome-happy-hipster-guy-smiling_176420-20321.jpg" alt="User Image">
+              <div>
+                <h5 class="reviewer-name">Aspen Siphron</h5>
+                <small class="review-date">May 12, 2024</small>
+              </div>
+              <span class="rating">⭐ 4.9</span>
+            </div>
+            <p class="review-text">
+              I've been using Nature's Best Vitamin C 1000 mg tablets for six months, and the results are fantastic.
+            </p>
+          </div> -->
+          <!-- Add more cards as needed -->
         </div>
       </div>
-
+    </div>
+  </section>
 
     
     <!-- Related Gifts Section -->
@@ -293,13 +345,9 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script>
+<script  src="productDetails.js">
 
-      // JavaScript function to change the main image
-  function changeImage(thumbnail) {
-    const mainImage = document.getElementById('mainImage');
-    mainImage.src = thumbnail.src;
-  }
+
 </script>
 </body>
 </html>
