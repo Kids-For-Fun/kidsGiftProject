@@ -20,316 +20,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .b-example-divider {
-            width: 100%;
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .btn-bd-primary {
-            --bd-violet-bg: #712cf9;
-            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-            --bs-btn-font-weight: 600;
-            --bs-btn-color: var(--bs-white);
-            --bs-btn-bg: var(--bd-violet-bg);
-            --bs-btn-border-color: var(--bd-violet-bg);
-            --bs-btn-hover-color: var(--bs-white);
-            --bs-btn-hover-bg: #6528e0;
-            --bs-btn-hover-border-color: #6528e0;
-            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-            --bs-btn-active-color: var(--bs-btn-hover-color);
-            --bs-btn-active-bg: #5a23c8;
-            --bs-btn-active-border-color: #5a23c8;
-        }
-
-        .bd-mode-toggle {
-            z-index: 1500;
-        }
-
-        .bd-mode-toggle .dropdown-menu .active .bi {
-            display: block !important;
-        }
-
-        #first-text {
-
-            margin-bottom: 180px;
-            color: black;
-            font-family: 'Times New Roman', Times, serif;
-
-        }
-
-        #first-text h1 {
-
-            font-size: 50px;
-        }
-
-        .text-end h1 {
-            color: black;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: left;
-        }
-
-        #shopBtn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center;
-            color: #000;
-            /* Text color */
-            background-color: #fce4ec;
-            /* Light pink background */
-            border: none;
-            border-radius: 30px;
-            /* Rounded corners */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            /* Subtle shadow */
-            transition: all 0.3s ease;
-            /* Smooth hover effect */
-            cursor: pointer;
-        }
-
-        #shopBtn:hover {
-            background-color: #f8bbd0;
-            /* Slightly darker pink on hover */
-            color: #fff;
-        }
-
-        /* .hero-background-color {
-            background-color: #f3e1e8;
-        } */
-        /*------------------------------------------------------------------------------*/
-        .category-card {
-            border-radius: 15px;
-            overflow: hidden;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .category-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .category-card:hover {
-            transform: scale(1.05);
-        }
-
-        .category-label {
-            background-color: rgba(255, 192, 203, 0.8);
-            /* Light pink with transparency */
-            color: #000;
-            padding: 5px 10px;
-            border-radius: 20px;
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .card {
-            /* width: 300px; */
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: visible;
-            /* للتأكد من أن العناصر الداخلية تظهر بالكامل */
-            text-align: center;
-        }
-
-        .card img {
-            width: 100%;
-            height: auto;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        .card-body {
-            background-color: #f8bbd0;
-            padding: 20px;
-        }
-
-        .card a {
-            width: 200px;
-            height: 50px;
-            background-color: #C89EAB;
-            color: white;
-            border-radius: 10px;
-            border-color: #C89EAB;
-            font-size: 20px;
-            text-align: center;
-            margin-top: 10px;
-            display: inline-block;
-
-
-        }
-
-        .card-body h3 {
-            color: white;
-            margin: 0;
-            font-size: 30px;
-
-
-        }
-
-        .card:nth-child(even) {
-            margin-top: 50px;
-        }
-
-        .category-head h1,
-        .str h2 {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 48px;
-            /* Adjust size as needed */
-            font-weight: bold;
-            /* Make it bold */
-            color: #f8bbd0;
-            /* Text color */
-            text-shadow:
-                2px 2px 0 #2a2a2a,
-                /* Outline: top-right */
-                -2px -2px 0 #2a2a2a,
-                /* Outline: bottom-left */
-                2px -2px 0 #2a2a2a,
-                /* Outline: top-left */
-                -2px 2px 0 #2a2a2a;
-            /* Outline: bottom-right */
-            letter-spacing: 10px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .new-txt{
-
-            
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 48px;
-            /* Adjust size as needed */
-            font-weight: bold;
-            /* Make it bold */
-            color: #f8bbd0;
-            /* Text color */
-            text-shadow:
-                2px 2px 0 #2a2a2a,
-                /* Outline: top-right */
-                -2px -2px 0 #2a2a2a,
-                /* Outline: bottom-left */
-                2px -2px 0 #2a2a2a,
-                /* Outline: top-left */
-                -2px 2px 0 #2a2a2a;
-            /* Outline: bottom-right */
-            letter-spacing: 10px;
-            text-align: center;
-            margin-bottom: 50px;
-        
-        }
-
-        .card-body a .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: black;
-            /* يجعل اللون أسود */
-            border-radius: 50%;
-            /* لإضافة حواف دائرية للأيقونة */
-            width: 40px;
-            /* تعديل الحجم */
-            height: 40px;
-        }
-
-        .carousel-control-prev-icon:hover,
-        .carousel-control-next-icon:hover {
-            background-color: #333;
-            /* لون أغمق عند التمرير */
-        }
-        .product-card {
-    border: 1px solid #f1f1f1;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    width: 80%;
-  }
-  .product-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  .product-card .card-body {
-    padding: 15px;
-  }
-  .product-card .price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-  }
-  .product-card .rating {
-    color: #ffc107; /* Yellow for stars */
-  }
-  .product-card .buy-btn {
-    background-color: #f8d7e0;
-    color: #333;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 20px;
-  }
-  .product-card .buy-btn:hover {
-    background-color: #f5b8c6;
-  }
-    </style>
 
 
     <!-- Custom styles for this template -->
@@ -360,7 +56,7 @@
         </symbol>
     </svg>
 
-    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <!-- <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
         <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
             aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
             <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
@@ -406,61 +102,75 @@
                 </button>
             </li>
         </ul>
-    </div>
+    </div> -->
 
 
-    <header class="bg-light shadow-sm">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <!-- Logo -->
-                <div class="logo">
-                    Kids <span>★</span>
-                    <div class="icon">❤</div>
-                </div>
+<header class="bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                Kids <span>★</span>
+                <div class="icon">❤</div>
+            </div>
 
-                <!-- Burger Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!-- Burger Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- Collapsible Menu -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link text" href="index.html" style="color: #EECAD5;">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Categorys</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="userProfile.html">Your Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Cart</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="contactUs.html">Contact</a>
-                        </li>
-                    </ul>
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text" href="index.html" style="color: #EECAD5;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="product.html">Categorys</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="userProfile.html">Your Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="checkOut.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="contactUs.html">Contact</a>
+                    </li>
+                </ul>
 
-                    <!-- Search Bar and Icons -->
-                    <div class="d-flex align-items-center">
-                        <!-- Search Bar -->
-                        <div class="input-group me-3">
-                            <input type="text" class="form-control" placeholder="Search Product">
-                            <button class="btn btn-outline-secondary" type="button">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-
-                        <!-- User Icon -->
-                        <i class="fa-regular fa-user fs-5"></i>
+                <!-- Search Bar and Icons -->
+                <div class="d-flex align-items-center">
+                    <!-- Search Bar -->
+                    <div class="input-group me-3">
+                        <input type="text" class="form-control"  id="searchbar" placeholder="Search Product"  onkeyup="search_animal()">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
+                    <!-- <ul id='list'>
+                        <li class="animals">Cat</li>
+                        <li class="animals">Dog</li>
+                        <li class="animals">Elephant</li>
+                        <li class="animals">Fish</li>
+                        <li class="animals">Gorilla</li>
+                        <li class="animals">Monkey</li>
+                        <li class="animals">Turtle</li>
+                        <li class="animals">Whale</li>
+                        <li class="animals">Alligator</li>
+                        <li class="animals">Donkey</li>
+                        <li class="animals">Horse</li>
+                    </ul> -->
+
+                    <!-- User Icon -->
+                    <a href="userProfile.html"><i class="fa-regular fa-user fs-5"></i></a>
+                    <span id="nameOfUser"></span>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
     <main>
 
@@ -550,103 +260,128 @@
                 </div>
             </div>
         </div>
-        <div class="category-head">
-            <h1>Categories</h1>
+        <!-- slider -->
+        <div class="section-header">
+            <h2 style="color: #eecad5">Categories</h2>
+            <p>Check our trending</p>
         </div>
-        <div id="cardCarousel" class="carousel slide" data-bs-ride="false" style="height: 600px;">
-            <div class="carousel-inner" style="height: 500px;">
-                <!-- First Slide -->
-                <div class="carousel-item active">
-                    <div class="d-flex  justify-content-center gap-5 ">
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/133062.jpg" class="card-img-top" alt="Image 1">
-                            <div class="card-body text-center" style="background-color: #f8bbd0; height: 50px;">
-                                <h3>Abstract</h3>
-                                <a href="#" class="btn btn-primary" style="margin-top:80px ; color:White; ">Learn
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem; height: 30rem;">
-                            <img src="img/133062.jpg" class="card-img-top" alt="Image 2">
-                            <div class="card-body text-center" style="background-color: #f8bbd0;">
-                                <h3>Abstract</h3>
-                                <a href="#" class="btn btn-primary" style="margin-top:80px ; ">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/133062.jpg" class="card-img-top" alt="Image 3">
-                            <div class="card-body text-center" style="background-color: #f8bbd0;">
-                                <h3>Abstract</h3>
-                                <a href="#" class="btn btn-primary" style="margin-top:80px ; color:White; ">Learn
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/133062.jpg" class="card-img-top" alt="Image 1">
-                            <div class="card-body text-center" style="background-color: #f8bbd0;">
-                                <h3>Abstract</h3>
-                                <a href="#" class="btn btn-primary" style="margin-top:80px ; color:White; ">Learn
-                                    More</a>
-                            </div>
-                        </div>
-                    </div>
+<div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="w3-row-padding w3-padding-16 w3-center shadow-cat">
+                <div class="w3-quarter">
+                    <a href="/Home/Tickets">
+                        <img src="img/133062.jpg" alt="Adam Concert" />
+                    </a>
+                    <h3 class="mt-3">TOY</h3>
                 </div>
-                <!-- Second Slide -->
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center gap-5">
-                        <div class="card" style="width: 18rem; height: 30rem;">
-                            <img src="img/133062.jpg" class="card-img-top" alt="Image 4">
-                            <div class="card-body text-center" style="background-color: #f8bbd0;">
-                                <h3>Abstract</h3>
-                                <a href="#" class="btn btn-primary" style="margin-top:80px ; color:White; ">Learn
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/133062.jpg" class="card-img-top" alt="Image 5">
-                            <div class="card-body text-center" style="background-color: #f8bbd0;">
-                                <h3>Abstract</h3>
-                                <a href="#" class="btn btn-primary" style="margin-top:80px ; color:White; ">Learn
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/133062.jpg" class="card-img-top" alt="Image 6">
-                            <div class="card-body text-center" style="background-color: #f8bbd0;">
-                                <h3>Abstract</h3>
-                                <a href="#" class="btn btn-primary" style="margin-top:80px ; color:White; ">Learn
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                            <img src="img/133062.jpg" class="card-img-top" alt="Image 1">
-                            <div class="card-body text-center" style="background-color: #f8bbd0;">
-                                <h3>Abstract</h3>
-                                <a href="#" class="btn btn-primary" style="margin-top:80px ; color:White; ">Learn
-                                    More</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="w3-quarter">
+                    <img src="img/133062.jpg" alt="Hamaki Concert" />
+                    <h3 class="mt-3">TOY</h3>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/133062.jpg" alt="Mahmoud Concert" />
+                    <h3 class="mt-3">TOY</h3>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/133062.jpg" alt="Siilawy Concert" />
+                    <h3 class="mt-3">TOY</h3>
                 </div>
             </div>
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: #000;"></span>
-                <span class="visually-hidden" style="color: #000;">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true" style="color: #000;"></span>
-                <span class="visually-hidden" style="color: #000;">Next</span>
-            </button>
         </div>
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2  d-flex flex-column gap-5">
-                <div class="str">
-                    <h2 class="featurette-heading fw-normal lh-1 text-center ">Our Story</h2>
+        <div class="carousel-item">
+            <div class="w3-row-padding w3-padding-16 w3-center shadow-cat">
+                <div class="w3-quarter">
+                    <img src="img/133062.jpg" alt="Another Concert 1" />
+                    <h3 class="mt-3">By Color</h3>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/133062.jpg" alt="Another Concert 2" />
+                    <h3 class="mt-3">By Age</h3>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/133062.jpg" alt="Another Concert 3" />
+                    <h3 class="mt-3">By Price</h3>
+                </div>
+                <div class="w3-quarter">
+                    <img src="img/133062.jpg" alt="Another Concert 4" />
+                    <h3 class="mt-3">By Brand</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- slider -->
+        <!-- <div class="cat-card">
+            <div class="section-header">
+                <h2 style="color: #eecad5">Categories</h2>
+                <p>Check our trending</p>
+            </div>
+            <div class="w3-main" >
+                <div class="w3-row-padding w3-padding-16 w3-center shadow-cat" id="events">
+                    <div class="w3-quarter">
+                        <a href="/Home/Tickets">
+                            <img src="img/133062.jpg" alt="Adam Concert" /></a>
+                        <h3 class="mt-3">TOY</h3>
+                    </div>
+                    <div class="w3-quarter">
+                        <img src="img/133062.jpg" alt="Hamaki Concert" />
+                        <h3 class="mt-3">TOY</h3>
+                    </div>
+                    <div class="w3-quarter">
+                        <img src="img/133062.jpg" alt="Mahmoud Concert" />
+                        <h3 class="mt-3">TOY</h3>
+                    </div>
+                    <div class="w3-quarter">
+                        <img src="img/133062.jpg" alt="Siilawy Concert" />
+                        <h3 class="mt-3">TOY</h3>
+                    </div>
+                </div>
+
+        </div> -->
+        <div class="row featurette about-sectionn">
+            <div class="col-md-7 order-md-2  d-flex flex-column gap-5 about-txt">
+                <div class="section-header about-title">
+                    <h2  class="hh" style="color: #eecad5">Our Story</h2>
+                    
                 </div>
                 <div>
-                    <p class="lead">Welcome to KidsGifts Shop! Our journey began with a simple idea: to make every child
+                    <p class="lead about-para" >Welcome to KidsGifts Shop! Our journey began with a simple idea: to make every child
                         smile by offering gifts that
                         spark joy, inspire imagination, and create lasting memories. At KidsGifts Shop, we believe every
                         child deserves something special, whether it’s for a birthday, a holiday, or
@@ -656,20 +391,26 @@
 
                 </div>
             </div>
-            <div class="col-md-5 order-md-1  d-flex  justify-content-center">
-                <img src="img/5759.jpg" alt="" style="width: 500px; height: 500px;">
+            <div class="col-md-5 order-md-1  d-flex  justify-content-center img-shadow">
+                <img src="img/7732.jpg" alt="" style="width: 500px; height: 500px;">
                 <title>Placeholder</title>
 
             </div>
         </div>
-        <h2 class="featurette-heading fw-normal lh-1 text-center new-txt">New Arrivals</h2>
+        <div class="section-header">
+            <h2 style="color: #eecad5">New Arrivals</h2>
+            
+        </div>
         <div id="new-products" style="margin-left: 60px;">
             
         </div>
         
-        <div class="spc-products-section">
+        <div class="spc-products-section" style="margin-left: 60px;">
 
-            <h2 class="featurette-heading fw-normal lh-1 text-center new-txt">Spcieal Offers</h2>
+            <div class="section-header">
+                <h2 style="color: #eecad5">Spcieal Offers</h2>
+                
+            </div>
             <div id="offers-products">
     
             </div>
@@ -745,47 +486,43 @@
                     data.slice(0, 5).map((data)=>{
                         
                         document.getElementById("new-products").innerHTML+=`
-                           <div class="container my-4">
-                                <div class="product-card">
-                                <img src="${data.image}" alt="Product Image">
-                                <div class="card-body" style="background-color:white;">
-                                    <h5 class="card-title">${data.name}</h5>
-                                    <p class="card-text">
-                                    dddddddddddddddddddddddd
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                    <span class="price">${data.price}</span>
-                                    <span class="rating">⭐ ${data.rating}</span>
-                                    </div>
-                                    <div class="mt-3 text-center">
-                                    <button class="buy-btn">Buy</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>`
+                           <div id="cardItem" class="card">
+      <div class="col">
+        <div class="card h-100">
+          <img id="imgCard" src="${data.image}" class=" card-img-top" alt="Bella Doll">
+          <div id="textCardContainer" class="card-body text-center">
+            <h5 class="card-title">${data.name}</h5>
+            <p class="card-text">${data.description}</p>
+            <div class="d-flex justify-content-between">
+              <span class="fw-bold">$${data.price}</span>
+              <span class="text-warning">&#9733;${data.rating}</span>
+            </div>
+            <button id="detailsButton" class="btn btn-pink" style="background-color: #f8d7da; color: #000;">More Details</button>
+          </div>
+        </div>
+      </div>
+    </div>`
 
                     });
                     data.slice(5, 9).map((d) => {
 
                         document.getElementById("offers-products").innerHTML += `
-                           <div class="container my-4">
-                                <div class="product-card">
-                                <img src="${d.image}" alt="Product Image">
-                                <div class="card-body" style="background-color:white;">
-                                    <h5 class="card-title">${d.name}</h5>
-                                    <p class="card-text">
-                                    dddddddddddddddddddddddd
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                    <span class="price">${d.price}</span>
-                                    <span class="rating">⭐ ${d.rating}</span>
-                                    </div>
-                                    <div class="mt-3 text-center">
-                                    <button class="buy-btn">Buy</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>`
+                          <div id="cardItem" class="card">
+      <div class="col">
+        <div class="card h-100">
+          <img id="imgCard" src="${d.image}" class=" card-img-top" alt="Bella Doll">
+          <div id="textCardContainer" class="card-body text-center">
+            <h5 class="card-title">${d.name}</h5>
+            <p class="card-text">${d.description}</p>
+            <div class="d-flex justify-content-between">
+              <span class="fw-bold">$${d.price}</span>
+              <span class="text-warning">&#9733;${d.rating}</span>
+            </div>
+            <button id="detailsButton" class="btn btn-pink" style="background-color: #f8d7da; color: #000;">More Details</button>
+          </div>
+        </div>
+      </div>
+    </div>`
                     });
                 } else {
                     console.log("No data available");
