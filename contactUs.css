@@ -3,11 +3,17 @@ body {
     font-family: Arial, sans-serif;
 }
 
+:root {
+    --main-color: #EECAD5;
+    --text-color: #1D2939;
+    --bg--color: #F9FFFF;
+}
+
 body .hero {
     width: 100%;
     height: 450px;
-    background-image: url("132093513_3de9931d-8617-476e-bc19-f4e3ddc92731.jpg");
-    background-size: contain;
+    background-image: url("img/5759.jpg");
+    background-size: cover;
 }
 
 body .contact-container {
@@ -44,6 +50,7 @@ body .contact-container .frm .contact-btn {
     text-align: center;
 }
 
+
 body .contact-container .info i {
     margin-right: 30px;
     color: #C89EAB;
@@ -67,12 +74,12 @@ body .contact-container .info .pinfo p:nth-child(even) {
     font-size: 15px;
 }
 
-body footer {
+/* body footer {
     width: 100%;
     background-color: #C89EAB;
-}
+} */
 
-header {
+/* header {
     background: #ffffff;
     padding: 15px 50px;
     display: flex;
@@ -116,6 +123,47 @@ header nav ul li a {
 header nav ul li a:hover {
     -webkit-text-decoration: underline rgb(7, 154, 199);
     text-decoration: underline rgb(7, 154, 199);
+} */
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #EECAD5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    font-size: 2rem;
+    color: #FFB6C1;
+
+    /* A complementary pink color */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: #FF69B4;
+    /* Another fun color for the icon */
+    animation: bounce 1.5s infinite;
+}
+
+/* Add a bouncing animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .search-container {
@@ -148,7 +196,118 @@ header nav ul li a:hover {
     width: 20px;
     height: 20px;
     margin-left: 15px;
-    cursor: pointer;
+    cursor: pointgger;
+}
+
+footer {
+    background-color: var(--main-color);
+}
+
+#social_icon {
+    padding-bottom: 15px;
+}
+
+#social_icon li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#social_icon i {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+#social_icon i:hover {
+    color: #FF69B4;
+}
+
+@media (max-width: 576px) {
+    body .hero {
+        display: none;
+    }
+
+    .info .pinfo {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 200px;
+        margin: 0;
+
+    }
+
+    .info i {
+        display: none;
+    }
+
+    body .contact-container .info .pinfo p:nth-child(even) {
+        font-size: 10px;
+    }
+
+    body .contact-container .info .pinfo p:nth-child(odd) {
+        font-size: 15px;
+    }
+
+    header .navbar {
+        flex-wrap: wrap;
+    }
+
+    body .contact-container {
+        gap: 20px;
+    }
+
+    body .contact-container form input,
+    body .contact-container form textarea {
+        width: 100%;
+    }
+
+    body .contact-container .frm .contact-btn {
+        width: 100%;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body .hero {
+        display: none;
+    }
+
+    .info .pinfo {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 200px;
+        margin: 0;
+
+    }
+
+    .info i {
+        display: none;
+    }
+
+    body .contact-container .info .pinfo p:nth-child(even) {
+        font-size: 10px;
+    }
+
+    body .contact-container .info .pinfo p:nth-child(odd) {
+        font-size: 15px;
+    }
+
+    body .contact-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    body .contact-container form input,
+    body .contact-container form textarea {
+        width: 90%;
+    }
+
+    body .contact-container .frm .contact-btn {
+        width: 90%;
+    }
 }
 
 /*# sourceMappingURL=Contact.css.map */
