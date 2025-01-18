@@ -95,7 +95,11 @@ function getAllData() {
 }
 
 // قراءة بيانات مستخدم معين
+
 readUserData(1);
+
+// readUserData(1);
+
 
 // قراءة كل البيانات
 getAllData().then((data) => {
@@ -115,7 +119,14 @@ getAllData().then((data) => {
               <span class="fw-bold">$${data.products[userId].price}</span>
               <span class="text-warning">&#9733;${data.products[userId].rating}</span>
             </div>
+
             <button id="detailsButton" class="btn btn-pink" style="background-color: #f8d7da; color: #000;">More Details</button>
+
+            <div>
+            <button id="detailsButton" class="m-1 btn btn-pink" style="background-color: #f8d7da; color: #000;">More Details</button>
+            <button id="detailsButton" class="btn btn-pink" style="background-color: #f8d7da; color: #000;">Add to favorite</button>
+            </div>
+
           </div>
         </div>
       </div>
